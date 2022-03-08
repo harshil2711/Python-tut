@@ -1,0 +1,10 @@
+[<function getdate at 0x0000023A4EEFDF70>] hello world 
+[<function getdate at 0x000002969F60DF70>] hello world 
+[<function getdate at 0x00000229F720DF70>] hello world 
+[<function getdate at 0x000001FF12B3DF70>] hello world 
+[<function getdate at 0x0000020680B2DF70>] hello world 
+[<function getdate at 0x000002B019CFDF70>] hello world 
+[None] hello world 
+[None] hello world 
+[None] hello world 
+[None] hello world 
