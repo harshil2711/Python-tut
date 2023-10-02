@@ -15,6 +15,7 @@ Thanks......
 # 1. Use of end="".
 #  => This is used for write info in existing sentence.Used for write in one sentense also
 #  => You can give anything inside the " ".Like , : etc.
+#  => Specify what to print at the end.
 
 print('hello world.', end=" ")
 print('Now making python tutorial.')
@@ -58,3 +59,23 @@ print('hello \tworld')
 # Output:
 # hello   world
 # _____________________________________________________________________________________________
+
+# Use of sep=
+
+print('hello' , 5 ,6 , sep='!')
+
+# Output
+# hello!5!6
+
+# _____________________________________________________________________________________________
+
+# To print multiline string
+
+line = """orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+It was popularised in the 1960s with 
+the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+software like Aldus PageMaker includin
+
+"""
+print(line)

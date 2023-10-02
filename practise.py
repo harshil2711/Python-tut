@@ -1,20 +1,4 @@
-import pyautogui as pg
-import time
-time.sleep(5)
-
-for i in range(11):
-  pg.write("ka hal")
-  pg.press('Enter')
-
-
-
-
-
-
-
-
-
-
-
-
-
+n= int(input(" enter"))
+m = int(input("enter "))
+for i in range(1,n+1):
+    print(m * '* ')

@@ -27,3 +27,13 @@ print(f.readline())
 
 # 7
 # orld guys python
+
+# _____________________________________________________________________________________________
+# Truncate function is used to write a file with a particular character
+f = open("file1.txt",'w')
+
+f.write('Hello world.')
+f.truncate(3)
+
+# Output
+# Hel

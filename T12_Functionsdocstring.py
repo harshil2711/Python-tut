@@ -112,3 +112,13 @@ print(smaller,bigger)
 
 # Output
 # 99 , 100
+
+# __________________________________________________________________________________
+
+def averagee(*numbers):
+    sum = 0
+    for i in numbers:
+        sum=sum + i
+    print(sum/len(numbers))
+
+averagee(5,6,9,7,2)

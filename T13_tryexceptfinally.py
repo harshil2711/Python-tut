@@ -28,3 +28,80 @@ finally:
 # Enter the first number: df
 # Please enter valid input
 # okay
+
+
+# _________________________________________________________________________
+
+n = input("Enter the number : ")
+
+try:
+    for i in range(1,11):
+        print(f"{int(n)} X {int(i)} = {int(n*i)}")
+
+
+except:
+    print("invalid input")
+
+# Output
+# Enter the number : w
+# invalid input
+
+# _________________________________________________________________________
+
+n = int(input("Enter the index number: "))
+
+try:
+    a = [4, 6]
+    print(a[n])
+
+except IndexError:
+    print("Invalid index")
+
+# Output
+# Enter the index number: 55
+# Invalid index
+
+# _________________________________________________________________________
+
+# Finally keyword
+# Finally keyword will use in function mostly. It is use to execute finally block if try and except block returns any value
+
+
+def func1():
+    try:
+        n = int(input("Enter the number"))
+        l = [23, 45]
+        return l[n]
+
+    except:
+        return "Error occured"
+
+    finally:
+        print("this is finally block")
+
+print(func1())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

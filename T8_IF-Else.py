@@ -30,3 +30,58 @@ def cal():
         print(a-b)
 
 cal()
+
+
+#_____________________________________________________________________________
+
+if num<0:
+    print("Number is negative")
+elif num>0:
+    if num>0 and num<=10:
+        print("Number is between 0-10")
+    elif num>10 and num<=20:
+        print("Number is between 10-20")
+    elif num>20 and num<=30:
+        print("Number is between 20-30")
+    elif num>30 and num<=40:
+        print("Number is between 30-40")
+    else:
+        print("Number is greater than 40")
+
+else:
+    print("Number is zero")
+
+#_____________________________________________________________________________
+
+num1= int(input("enter the first number: "))
+num2 = int(input("enter the second number: "))
+op = input("Enter the operation: + - * /: ")
+
+if op=="+":
+    print(num1+num2)
+
+elif op=="-":
+    print(num1-num2)
+
+elif op=="*":
+    print(num1*num2)
+
+else:
+    print(num1/num2)
+
+# ________________________________________________________________
+
+import time
+
+a = int(time.strftime('%H'))
+
+
+if a<12:
+    print("Good morning")
+
+elif a>=12 and a<=16:
+    print("Good afternoon")
+
+else:
+    print("Good evening")
+

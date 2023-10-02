@@ -236,3 +236,105 @@ else:
 # number: 50
 # Not prime
 """
+# Stone paper scissor game
+
+import random
+
+while True:
+
+    a = ["rock" , "paper" , "scissor"]
+
+    computer = random.choice(a)
+    print()
+    user = input("Enter your input : ")
+
+    if user != "r" and user != "s" and user != "p":
+        raise ValueError("invalid input error")
+
+    if computer == 'rock' and user == 'p':
+        print("You win")
+        print("Computer input is 'rock' and yours is 'paper' ")
+
+    elif computer == 'rock' and user == 's':
+        print("Computer win")
+        print("Computer input is 'rock' and yours is 'scissor' ")
+
+
+    elif computer == 'paper' and user == 'r':
+        print("Computer win")
+        print("Computer input is 'paper' and yours is 'rock' ")
+
+
+    elif computer == 'paper' and user == 's':
+        print("You win")
+        print("Computer input is 'paper' and yours is 'scissor' ")
+
+
+    elif computer == 'scissor' and user == 'r':
+        print("You win")
+        print("Computer input is 'scissor' and yours is 'rock' ")
+
+
+    elif computer == 'scissor' and user == 'p':
+        print("Computer win")
+        print("Computer input is 'scissor' and yours is 'paper' ")
+
+
+    else:
+        print("draw")
+        print("Computer input and yours is same ")
+
+# __________________________________________________________________________________________
+# FOR MERFGE THE PDFS
+
+import PyPDF2
+
+m = PyPDF2.PdfMerger()
+
+for content in ['sample1.pdf' , 'sample2.pdf']:
+    m.append(content)
+
+m.write('newpdf.pdf')
+
+# _________________________________________________________________
+# FOR READ THE PDF
+
+import PyPDF2
+
+reader = PyPDF2.PdfReader('news.pdf')
+
+print(reader.pages[1].extract_text())
+
+# ____________________________________________________________________
+# Text to voice
+
+import pyttsx3
+i = 0
+li = ['tom' , 'cruise' , 'simaran']
+engine = pyttsx3.init()
+for i in range(len(li)):
+    engine.say(f"shout out to {li[i]}")
+engine.runAndWait()
+
+
+# ___________________________________________________________
+
+# Kaun banega crorepati
+
+questions = ["How many hours are there in a day?", "The baby frog is known as?" , "Rainbow consist of how many colours?"]
+answers = ["65" ,"Tadpole" , "7" ]
+
+prize = 0
+j = 0
+for i in questions:
+    print("Your first question is: " , i)
+    ans = input("Answer of this question : ")
+    if ans==answers[j]:
+        print("You are right")
+        prize = prize + 100
+        print("Your total winning amount is : ", prize)
+    else:
+        print("sorry you lost !!! , Your total winning amount is : " , prize)
+        quit()
+    j = j+1
+

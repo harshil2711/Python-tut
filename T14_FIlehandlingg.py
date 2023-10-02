@@ -85,6 +85,7 @@ for i in range(5):
 # ____________________________________________________________________________________________________
 f =  open('textfile4.txt','w')
 print(f.write('Hello world')) #If you print write function,it will show character count that is written in file.
+f.close()
 
 # Output:
 # 11
@@ -95,3 +96,57 @@ f.write('hello INDIA \n')  #and then write the content in it.
 
 # Output:
 # Hello world
+
+# ____________________________________________________________________________________________________
+
+with open('txtt.txt','a') as f:
+    f.write("Appending file")
+
+# This is the different method to read and write a file.
+
+# ____________________________________________________________________
+# To extract value from coma seperated file.
+
+for i in range(3):
+    line = f.readline()
+    m1 = line.split(',')[0]
+    m2 = line.split(',')[1]
+    m3 = line.split(',')[2]
+    print(m1)
+    print(m2)
+    print(m3)
+
+    print(line)
+
+# Using While loop
+
+i = 0
+
+while True:
+    line = f.readline()
+    if not line:
+        break
+
+    # if line is None:
+    #     break
+
+    m1 = line.split(",")[0]
+    m2 = line.split(",")[1]
+    m3 = line.split(",")[2]
+
+    print(m1)
+    print(m2)
+    print(m3)
+
+    i = i + 1
+
+
+# ____________________________________________________________________________________________________
+# Writelines function, to write a lines stored in a list.
+
+f = open("file1.txt",'w')
+
+lines = ['line 1\n','line 2\n','line 3\n']
+
+f.writelines(lines)
+

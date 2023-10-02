@@ -152,3 +152,35 @@ while i<=c:
 # candy
 # sorry we are out of stock
 
+# ______________________________________________________________________
+
+lista = ['red' , 'blue' , 'white' , 'orange']
+
+for color in lista:
+    print(color)
+    for i in color:
+        print(i)
+
+# Output
+# red
+# r
+# e
+# d
+# blue
+# b
+# l
+# u
+# e
+# white
+# w
+# h
+# i
+# t
+# e
+# orange
+# o
+# r
+# a
+# n
+# g
+# e
